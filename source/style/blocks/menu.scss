@@ -1,0 +1,29 @@
+/* .menu styles */
+.menu {
+	
+	text-align: center;
+}
+
+.menu__i {
+	line-height: 1;
+	&:not(:last-child) {
+		margin-bottom: 30px;
+	}
+
+	&.active {
+		.menu__l {
+			color: $brown;
+		}
+	}
+}
+
+.menu__l {
+	color: #000;
+	font-weight: bold;
+	font-size: 1.5rem;
+
+	&:hover {
+		color: $brown;
+	}
+}
+/* .menu styles end*/

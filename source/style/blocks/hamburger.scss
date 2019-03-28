@@ -1,0 +1,199 @@
+/* Styles Start*/
+//mixins
+// @mixin position-absolute ($top: null, $left: null, $right: null, $bottom: null) {
+// 	position: absolute;
+// 	top: $top;
+// 	left: $left;
+// 	right: $right;
+// 	bottom: $bottom;
+// }
+
+.hamburger {
+		@include img-center;
+		z-index: 10;
+		// transition: all 0.2s linear 0s;
+		.bar {
+			width: 100%;
+			// left: 0;
+			position: absolute;
+			background-color: $brown;
+			// border-radius: 3px;
+			
+			&-1 {
+				// @include position-absolute($top: 0px, $right: 0);
+				top: 0;
+			}
+			
+			&-2 {
+				// @include position-absolute($top: 7px, $right: 0);
+				// top: 7px;
+			}
+			
+			&-3 {
+				// @include position-absolute($top: 14px, $right: 0);
+				// top: 14px;
+			}
+		}
+
+	// &_index {
+	// 	.bar {
+	// 		background-color: #fff;
+	// 	}
+
+	// 	&.opened {
+	// 		.bar {
+	// 			background-color: #000;
+	// 		}
+	// 	}
+	// }
+
+	// &_default {
+	// 	.bar {
+	// 		background-color: #858ea1;
+	// 	}
+	// }
+
+	
+	
+	.bar {
+		transition: all 0.3s;
+	}
+	
+	&.opened {
+		transform: rotate(180deg);
+		
+		.bar {
+			// width: 28px;
+			transform-origin: 7% 50%;
+			&-2 {
+				opacity: 0;
+			}
+			
+			&-1 {
+				transform: rotate(45deg);
+				// top: 8px;
+			}
+			
+			&-3 {
+				transform: rotate(-45deg);
+				// top: 8px;
+			}
+		}
+	}
+
+	&.opened {
+		.bar {
+			width: 12px;
+		}
+	}
+
+}
+//========================================================
+// %mobile
+@media #{$mobileonly} {
+	.hamburger {
+		width: 22px;
+		height: 14px;
+
+		.bar {
+
+			height: 2px;
+			&-1 {
+				width: 11px;
+			}
+
+			&-2 {
+				width: 17px;
+				top: 6px;
+			}
+
+			&-3 {
+				width: 22px;
+				top: 12px;
+			}
+
+		}
+		
+		&.opened {
+			.bar {
+				transform-origin: 12% 50%;
+				width: 22px;
+			}
+		}
+
+	}
+}//@media (max-width: 767px) 
+
+//========================================================
+
+// %mobtab
+@media #{$mobtabonly} {
+
+}//@media (max-width: 1141px) 
+
+//========================================================
+// %tablet
+@media #{$tabonly} {
+	.hamburger {
+		width: 26px;
+		height: 19px;
+
+		.bar {
+			height: 3px;
+			&-1 {
+				width: 16px;
+			}
+
+			&-2 {
+				width: 21px;
+				top: 8px;
+			}
+
+			&-3 {
+				width: 26px;
+				top: 16px;
+			}
+
+		}
+
+		&.opened {
+			.bar {
+				width: 26px;
+			}
+		}
+	}
+}//#{$tabonly}
+
+//========================================================
+// %tabdesk
+@media #{$tabdeskonly} {
+
+} //(min-width: 768px)
+
+//========================================================
+// %desktop
+@media #{$deskonly} {
+	.hamburger {
+		// display: none;
+	}
+} // (min-width: 1042px)
+
+/*  End*/
+
+
+
+
+
+
+@media (min-width: 360px) and (max-width: 767px) {
+
+}// 5" phone
+
+@media (min-width: 375px) and (max-width: 767px) {
+
+} // 4.7"
+
+@media (min-width: 414px) and (max-width: 767px) {
+
+	
+}//5.5"

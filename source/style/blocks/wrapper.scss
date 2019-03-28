@@ -1,0 +1,11 @@
+/* .wrapper styles */
+.wrapper {
+	@include desktop {
+		display: flex;
+		position: relative;
+		flex: 1;
+	}
+}
+
+
+/* .wrapper styles end*/

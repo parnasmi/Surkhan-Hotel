@@ -1,0 +1,80 @@
+extends ../tpl/_template
+
+block variables
+	- var title = 'S-Блог-inside'
+
+block content
+	+b.intro
+		+e.H1.title.title_default: .title__inner: b К нам гости заглянула звезда Юлдуз Усманова и ее труппа
+		+e.bottom 11 / 07 / 2018
+	//- style.
+		/* .blog-inside styles */
+		@media (max-width: 767px) {
+		  .blog-inside {
+		    margin-bottom: 20px; } }
+
+		@media (min-width: 768px) {
+		  .blog-inside {
+		    margin-bottom: 30px; } }
+
+		@media (max-width: 767px) {
+		  .blog-inside__inner {
+		    padding-left: 10px;
+		    padding-right: 10px; } }
+
+		@media (min-width: 768px) and (max-width: 1280px) {
+		  .blog-inside__inner {
+		    width: 728px;
+		    margin: 0 auto; } }
+
+		@media (min-width: 1281px) {
+		  .blog-inside__inner {
+		    width: 991px;
+		    margin: 0 auto; } }
+
+		.blog-inside__content {
+		  border-radius: 3px;
+		  background-color: #ffffff;
+		  -webkit-box-shadow: 5px 6px 10px 0 rgba(0, 0, 0, 0.04);
+		          box-shadow: 5px 6px 10px 0 rgba(0, 0, 0, 0.04);
+		  color: #000; }
+		  .blog-inside__content img {
+		    max-width: 100%;
+		    height: auto;
+		    display: table;
+		    margin-left: auto;
+		    margin-right: auto; }
+		  .blog-inside__content p {
+		    margin: 15px 0; }
+		  @media (max-width: 767px) {
+		    .blog-inside__content {
+		      padding: 20px; } }
+		  @media (min-width: 768px) {
+		    .blog-inside__content {
+		      padding: 30px; } }
+		  .blog-inside__content span {
+		    color: #808080;
+		    font-style: italic;
+		    display: table;
+		    margin-left: auto;
+		    margin-right: auto; }
+		  .blog-inside__content i {
+		    font-style: italic; }
+
+		//- /* .blog-inside styles end*/
+	+b.blog-inside
+		+e.inner
+			+e.content
+				p: +src('pics','pic-yulduz-1.png')
+				span Фото из личного архива звезды
+				p
+					strong Юлду́з Усма́нова 
+					|(Усм́онова) (узб. Yulduz Usmonova, тур. Yıldız Usmanova) (род. 12 декабря 1963, Маргилан, Ферганская область Узбекистана) — известная как «примадонна узбекской эстрады», узбекская 
+					a(href="#") эстрадная певица, 
+					|композитор, поэт-песенник, продюсер, народная артистка Узбекистана, заслуженная артистка Таджикистана, Туркменистана, Казахстана В её репертуар входит более 600 песен на узбекском, турецком, уйгурском, казахском, татарском, русском, таджикском, персидском и других языках; а дискография насчитывает около 
+					strong: i 100 сольных пластинок, CD и DVD дисков
+					|[источник не указан 1730 дней]. Помимо Узбекистана, альбомы Усмановой издавались в Германии, США, Англии, Турции и Голландии. Общий тираж дисков превысил 
+					i 25 миллионов экземпляров.
+					p: +src('pics','pic-yulduz-2.png')
+					h2 H2 Дискография
+					|Негласный запрет, наложенный на творчество певицы, был отменен после смерти первого президента Узбекистана Ислама Каримова, накануне избрания Шавката Мирзияева новым главой республики. Певица начала появляться на государственных ТВ[1] и объявила о большом сольном концерте с программой «Ey Aziz Inson» на главной площадке страны — во дворце Истиклол, в котором не выступала уже 11 лет.

@@ -1,0 +1,59 @@
+/* .popup-close-btn styles */
+.popup-close-btn {
+	@include link-text-indent;
+	z-index: 11;
+	position: absolute;
+	// right: 20px;
+	// top: 20px;
+
+
+	// &.poem__popup-close {
+	// 	top: 0;
+	// 	right: 0;
+	// 	width: 20px;
+	// 	height: 20px;
+	// 	&::before,&::after {
+	// 			background-color: rgba(#000, .2)
+	// 	}
+	// }
+
+	//Change according to project
+	width: 40px;
+	height: 40px;
+	top: -40px;
+	right: -40px;
+	&::before, &::after {
+		background-color: #fff;
+	}
+
+
+	&:before, &:after {
+		$width: 50%;
+		$height: 2px;
+
+		transform: rotate(-45deg);
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -$height/2;
+		margin-left: -$width/2;
+		display: block;
+		height: $height;
+		width: $width;
+		background-color: #fff;
+		transition: all 0.2s ease-out;
+		}
+
+	&:after {
+		transform: rotate(45deg);
+	}
+
+	&:hover {
+		&:before, &:after {
+			transform: rotate(0deg);
+		}
+	}
+
+}
+/* .popup-close-btn styles end*/

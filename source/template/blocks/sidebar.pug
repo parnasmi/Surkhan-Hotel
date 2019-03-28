@@ -1,0 +1,25 @@
++b.ASIDE.sidebar
+	+e.logo
+		a.logo(href="#")
+			img(src="./assets/img/logo-desktop.svg" alt="")
+	+e.menu
+		+b.menu
+			+e.UL.list
+				each menuItem, index in menu
+					if index === 3
+						+e.i.active
+							+e.l(href="#")= menuItem
+					else
+						+e.i
+							+e.l(href="#")= menuItem
+	+e.contacts
+		+b.contacts
+			+e.tel.tel(href="tel:+998762240707")
+				+symbol('16','16','#icon-phone')
+				.text +998 76 224-07-07
+			+e.worktime Режим работы: Круглосуточно
+	+e.lang(href="#")
+		+b.lang
+			.iconimg
+				img(src="./assets/img/icon-flag.svg", alt)
+			.text English version

@@ -1,0 +1,95 @@
+/* Sidebar styles */
+.sidebar {
+	padding: 30px;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@include mobile {
+		top: 40px;
+		padding-bottom: 80px;
+	}
+
+	@include mobtab {
+		width: 300px;
+		position: absolute;
+		height: 100vh;
+		z-index: 11;
+
+		//Animation
+		transition: all .5s cubic-bezier(0.23, 1, 0.32, 1);
+		transform: translate3d(-300px,0,0);
+		overflow: auto;
+	}
+
+	@include tablet {
+		top: 60px;
+	}
+
+	@include desktop {
+		flex: 0 0 300px;
+		
+	}
+
+	//showing-and-hiding-animation
+	&.is-open {
+		@include mobtab {
+			transform: translate3d(0,0,0);
+			// transition: all .6s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+			transition: all .5s ease-in-out;
+		}
+	}
+}
+
+.sidebar__logo {
+	@include mobtab {
+		display: none;
+	}
+
+	@include desktop {
+		margin-bottom: 50px;
+	}
+}
+
+.sidebar__menu {
+	margin-bottom: 40px;
+}
+
+.sidebar__contacts {
+	border-radius: 5px;
+	background-color: #f9f9f9;
+	padding: 15px 34px;
+	margin-bottom: 50px;
+}
+
+.sidebar.is-open + .sidebar-overlay {
+	opacity: .8;
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.sidebar-overlay {
+	position: absolute;
+	
+	background: #000000;
+	top: 0;left: 0;bottom: 0;right: 0;
+	z-index: 10;
+	transition: all .6s;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+
+	@include desktop {
+		display: none;
+	}
+
+}
+
+.sidebar__lang {
+	color: $grey;
+	&:hover {
+		color: #000;
+	}
+}
+/* Sidebar styles end*/

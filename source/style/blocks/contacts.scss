@@ -1,0 +1,61 @@
+/* .contacts styles */
+	.contacts {
+		
+		@include tabdesk {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	.contacts__tel {
+		@include mobile {
+			// @include link-text-indent;
+			display: block;
+
+			.page-header & {
+				position: relative;
+				width: 40px;
+				height: 40px;
+				border-left: 1px solid $l-grey;
+				.icon {
+					@include img-center;
+				}
+
+				.text {
+					display: none;
+				}
+			}
+		}
+
+		@include mobtab {
+			.sidebar & {
+				margin-bottom: 5px;	
+			}
+			&.tel {
+				justify-content: center;
+			}
+		}
+
+		@include desktop {
+			margin-bottom: 8px;
+		}
+	}
+
+	.contacts__worktime {
+		@include mobile {
+			.page-header & {
+				display: none;
+			}
+		}
+
+		@include mobtab {
+			font-size: 1.2rem;
+		}
+
+		@include desktop {
+			font-size: 1.3rem;
+		}
+
+	}
+/* .contacts styles end*/

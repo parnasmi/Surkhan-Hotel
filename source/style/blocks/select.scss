@@ -1,0 +1,15 @@
+/* .select styles */
+	.select {
+		width: 100%;
+		line-height: 40px;
+		height: 40px;
+		border: 1px solid $l-grey;
+		outline: none;
+		background-color: #fff;
+
+		&:disabled {
+			background-color: #ececec;
+			border: solid 1px #dfdfdf;
+		}
+	}
+/* .select styles end*/

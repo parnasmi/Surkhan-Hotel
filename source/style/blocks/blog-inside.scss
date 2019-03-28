@@ -1,0 +1,54 @@
+/* .blog-inside styles */
+.blog-inside {
+	@include mobile {
+		margin-bottom: 20px;
+	}
+
+	@include tabdesk {
+		// margin-bottom: 30px;
+	}
+}
+
+.blog-inside__inner {
+	@include inner;
+}
+
+.blog-inside__content {
+	@include hcard;
+	color: #000;
+
+	img {
+		max-width: 100%;
+		height: auto;
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	p {
+		margin: 15px 0;
+	}
+
+	@include mobile {
+		padding: 20px;
+	}
+
+	@include tabdesk {
+		padding: 30px;
+	}
+
+	span {
+		color: $grey;
+		font-style: italic;
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	i {
+		font-style: italic;
+	}
+}
+
+
+/* .blog-inside styles end*/

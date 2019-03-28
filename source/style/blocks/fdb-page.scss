@@ -1,0 +1,98 @@
+/* .fdb-page styles */
+.fdb-page {
+	@include mobile {
+		padding-bottom: 20px;
+	}
+
+	// @include tabdesk {
+	// 	padding-bottom: 30px;
+	// }
+}
+
+.fdb-page__inner {
+	@include inner;
+}
+
+.fdb-page__content {
+	@include mobtab {
+		margin-bottom: 20px;
+	}
+
+	@include desktop {
+		margin-bottom: 30px;
+	}
+}
+
+.fdb-page__header {
+	margin-bottom: 20px;
+	@include hcard;
+	padding: 20px;
+
+	@include tabdesk {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+}
+
+.fdb-page__head-descr {
+	font-size: 1.5rem;
+
+	@include mobile {
+		margin-bottom: 15px;
+	}
+}
+
+.fdb-page__head-title {
+	color: #000;
+	font-weight: bold;
+
+	@include mobile {
+		margin-bottom: 10px;
+	}
+
+	@include tabdesk {
+		line-height: 1;
+		margin-bottom: 0px;
+	}
+}
+
+.fdb-page__muted-text {
+	font-family: $ff-playfair;
+	font-style: italic;
+}
+
+.fdb-page__head-btn {
+	padding: 12px 13px 11px 17px;
+	text-transform: uppercase;
+	outline: none;
+}
+
+.fdb-page__list {
+	margin: 0;
+}
+
+.fdb-page__item {
+	display: none;
+	@include mobile {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+
+	@include tabdesk {
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.fdb-page__show-more {
+	padding: 14px 15px 13px;
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* .fdb-page styles end*/

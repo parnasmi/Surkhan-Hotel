@@ -1,0 +1,457 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"setsypy",
+				"Set Syntax: Pug (Python)"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"setsynpytho",
+				"Set Syntax: Python"
+			],
+			[
+				"con",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"conv to tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"setptho",
+				"Set Syntax: Pug (Python)"
+			],
+			[
+				"set syntasas",
+				"Set Syntax: Sass"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/build/zerocomps.html",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/source/style/buttons.scss",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/source/style/abstracts/_variables.scss",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/source/style/style.scss",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/source/style/base/_base.scss",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/source/style/base/_utilities.scss",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/source/style/components/_slider-ar.scss",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/content.json",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/source/template/pages/ui-arrows-x.pug",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/source/style/abstracts/_mixins.scss",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/source/style/components/_btn.scss",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/source/style/buttons-bdrs.scss",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/gulp/tasks/sass-blog.js",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/gulp/tasks/sass-bdrs.js",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/source/style/uicolors.scss",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/source/style/vendor.scss",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/source/style/site.scss",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/source/style/shop.scss",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/source/style/mailer.scss",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/source/style/blog.scss",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/source/style/layouts/_grids.scss",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/source/template/_head.pug",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/source/template/abstracts/mixins.pug",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/source/template/pages/ui-components.pug",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/gulp/tasks/sass.js",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/gulp/tasks/watch.js",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/gulp/tasks/pug.one.js",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/gulpfile.js",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/gulp/tasks/sass-vendor.js",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/gulp/tasks/sass-uicolors.js",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/gulp/tasks/sass-site.js",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/gulp/tasks/sass-shop.js",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/gulp/tasks/sass-mailer.js",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/gulp/tasks/sass-fonts.js",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/gulp/tasks/sass-buttons.js",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/gulp/paths/tasks.js",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/source/template/layouts/footer.pug",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/Balance/source/sprite/arrow-right-big.svg",
+		"/Users/ilkhom_maks/Documents/Dev/others_stuffs/Gulp Project Template 2.0/source/template/layouts/footer.pug",
+		"/Users/ilkhom_maks/Documents/Dev/others_stuffs/Gulp Project Template 2.0/source/js/mod.js",
+		"/Users/ilkhom_maks/Documents/Dev/others_stuffs/Gulp Project Template 2.0/source/js/libs/hyphenator.js",
+		"/Users/ilkhom_maks/Downloads/Telegram Desktop/Loop 3 - Step 10/assets/css/animation.css",
+		"/Users/ilkhom_maks/Documents/Dev/FL/FS/incart/package.json"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"15",
+			"8",
+			"-big",
+			"_round",
+			"-big",
+			"15",
+			"8",
+			"_round",
+			"A"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 71.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "hotel.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"con",
+				"content.json"
+			],
+			[
+				"pugone",
+				"gulp/tasks/pug.one.js"
+			],
+			[
+				"uiarrow",
+				"source/template/pages/ui-arrows-x.pug"
+			],
+			[
+				"mixin",
+				"source/style/abstracts/_mixins.scss"
+			],
+			[
+				"vari",
+				"source/style/abstracts/_variables.scss"
+			],
+			[
+				"var",
+				"source/style/abstracts/_variables.scss"
+			],
+			[
+				"utili",
+				"source/style/base/_utilities.scss"
+			],
+			[
+				"style",
+				"source/style/style.scss"
+			],
+			[
+				"uibutton",
+				"source/template/pages/ui-buttons.pug"
+			],
+			[
+				"uipug",
+				"source/template/pages/ui-arrows-x.pug"
+			],
+			[
+				"mixi",
+				"source/template/abstracts/mixins.pug"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"pugon",
+				"gulp/tasks/pug.one.js"
+			],
+			[
+				"zero",
+				"source/template/pages/zerocomps.pug"
+			],
+			[
+				"_he",
+				"source/template/_head.pug"
+			],
+			[
+				"",
+				"source/style/abstracts/_variables.scss"
+			],
+			[
+				"btn",
+				"source/style/components/_btn.scss"
+			],
+			[
+				"base",
+				"source/style/base/_base.scss"
+			],
+			[
+				"va",
+				"source/style/abstracts/_variables.scss"
+			],
+			[
+				"button",
+				"source/style/buttons.scss"
+			],
+			[
+				"zerp",
+				"source/template/pages/zerocomps.pug"
+			],
+			[
+				"butto",
+				"source/style/buttons.scss"
+			],
+			[
+				"grids",
+				"source/style/layouts/_grids.scss"
+			],
+			[
+				"gulpfil",
+				"gulpfile.js"
+			],
+			[
+				"zerocom",
+				"source/template/pages/zerocomps.pug"
+			],
+			[
+				"gr",
+				"source/style/layouts/_grids.scss"
+			],
+			[
+				"otherpag",
+				"source/template/pages/another-page.pug"
+			],
+			[
+				"sass",
+				"gulp/tasks/sass-bdrs.js"
+			],
+			[
+				"watch",
+				"gulp/tasks/watch.js"
+			],
+			[
+				"varia",
+				"source/style/abstracts/_variables.scss"
+			],
+			[
+				"foote",
+				"source/template/layouts/footer.pug"
+			],
+			[
+				"footer",
+				"source/template/layouts/footer.pug"
+			],
+			[
+				"pug",
+				"gulp/tasks/pug.js"
+			],
+			[
+				"_uti",
+				"source/style/base/_utilities.scss"
+			],
+			[
+				"temppug",
+				"source/template/tpl/_template.pug"
+			],
+			[
+				"scrip",
+				"source/template/_scripts.pug"
+			],
+			[
+				"appjs",
+				"gulp/paths/app.js"
+			],
+			[
+				"_temp",
+				"source/template/tpl/_template.pug"
+			],
+			[
+				"_base",
+				"source/style/base/_base.scss"
+			],
+			[
+				"scrippug",
+				"source/template/_scripts.pug"
+			],
+			[
+				"_head",
+				"source/template/_head.pug"
+			],
+			[
+				"ven",
+				"source/style/vendor.scss"
+			],
+			[
+				"sty",
+				"source/style/style.scss"
+			],
+			[
+				"jsfo",
+				"gulp/paths/js.foundation.js"
+			],
+			[
+				"ui",
+				"source/style/base/_utilities.scss"
+			],
+			[
+				"_bas",
+				"source/style/base/_base.scss"
+			],
+			[
+				"ut",
+				"source/style/base/_utilities.scss"
+			],
+			[
+				"_var",
+				"source/style/abstracts/_variables.scss"
+			],
+			[
+				"js.f",
+				"gulp/paths/js.foundation.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/Dev/FL/FS/hotel/source/style/base/hotel.sublime-workspace"
+			],
+			[
+				"wood",
+				"/Applications/MAMP/htdocs/wood/wood.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 337.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

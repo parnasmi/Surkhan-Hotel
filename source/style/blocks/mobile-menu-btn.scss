@@ -1,0 +1,25 @@
+/* .mobile-menu-btn styles */
+	.mobile-menu-btn {
+		position: relative;
+		display: block;
+
+		@include mobile {
+			width: 40px;
+			height: 40px;
+		}
+
+		@include mobtab {
+			border-right: 1px solid $l-grey;
+		}
+
+		@include tablet {
+			height: 60px;
+			width: 60px;
+		}
+
+		@include desktop {
+			display: none;
+		}
+	}
+/* .mobile-menu-btn styles end*/
+	

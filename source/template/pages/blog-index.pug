@@ -1,0 +1,22 @@
+extends ../tpl/_template
+
+block variables
+	- var title = 'S-Блог-index'
+
+block content
+	+b.intro
+		+e.H1.title.title_default: .title__inner: b Новости
+		+e.bottom Пишем интересные статьи и держим вас с в курсе о жизни гостницы
+	+b.blog
+		+e.inner
+			+e.UL.post-list
+				each post in blogPosts
+					+e.post
+						+b.card_blog
+							+e.image_blog(href="#"): img(src=`./assets/pics/pic-blog-index-${post.pic}.png`, alt)
+							+e.content_blog
+								+e.title_blog(href="#")= post.title
+								+e.descr_blog= post.descr
+								+e.read-more(href="#")
+									span Читать далее
+									+symbol('46','7','#arrow-long')

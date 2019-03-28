@@ -1,0 +1,26 @@
+block variables
+include ../../../bower_components/bemto/bemto.pug
+
+
+doctype html
+html
+	head
+		include ../_head
+	body
+		block preloader
+			include ../_preloader
+		.outer-wrapper
+			.wrapper
+				//- header.page-header
+				include ../blocks/header
+				//- aside.sidebar
+				include ../blocks/sidebar
+				.sidebar-overlay
+				main.main
+					//- .main-content
+					block content
+			footer.page-footer
+				include ../blocks/footer
+		block scripts
+			include ../_scripts
+

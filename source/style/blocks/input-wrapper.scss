@@ -1,0 +1,41 @@
+/* .input-wrapper styles */
+	.input-wrapper {
+		display: block;
+		position: relative;
+
+		.icon {
+			@include centered(y);
+
+		}
+
+		&_iconed_right {
+			.icon {
+				right: 10px;
+			}
+		}
+
+		&.is-errored {
+			.input {
+				border: 2px solid #ff8f8f;
+			}
+
+			.error-msg {
+				display: block;
+			}
+		}
+	}
+
+	.error-msg {
+    // position: absolute;
+    color: #ff1111;
+    font-size: 1.3rem;
+    // bottom: -21px;
+    // left: 0;
+    margin-top: 5px;
+    display: none;
+	}
+
+	.input-wrapper .input:invalid + .error-msg {
+		display: block;
+	}
+/* .input-wrapper styles end*/

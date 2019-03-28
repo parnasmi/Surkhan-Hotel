@@ -1,0 +1,96 @@
+/* .sights styles */
+.sights {
+	@include mobtab {
+		margin-top: 20px;	
+	}
+
+	@include desktop {
+		margin-top: 50px;
+	}
+}
+
+.sights__title {
+	color: #000;
+	font-family: $ff-playfair;
+	text-align: center;
+
+	@include mobile {
+		font-size: 1.6rem;
+		margin-bottom: 10px;
+	}
+
+	@include tabdesk {
+		font-size: 2rem;
+		margin-bottom: 25px;
+	}
+}
+
+.sights__inner {
+	@include mobile {
+		padding-left: 10px;
+	}
+
+	@include tablet {
+		@include container-tab;
+	}
+
+	@include desktop {
+		@include container;
+	}
+}
+
+.sights__post-list {
+	@include mobile {
+		overflow-x: scroll;
+		white-space: nowrap;
+		margin: 0;
+		padding-bottom: 20px!important;
+
+		&::-webkit-scrollbar {
+				display: none;
+		}
+	}
+
+	@include tablet {
+		margin-right: -41px;
+	}
+
+	@include tabdesk {
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+
+	@include desktop {
+		margin-right: -39px;
+	}
+}
+// .sights__post-list::-webkit-scrollbar{
+// 	display: none;
+// }
+
+.sights__post {
+	@include mobile {
+		width: 200px;
+		margin-right: 10px;
+		display: inline-block;
+		vertical-align: top;
+		white-space: normal;
+		overflow: hidden;
+	}
+
+	@include tablet {
+		width: calc(100% / 3 - 41px);
+		margin-right: 41px;
+	}
+
+	@include tabdesk {
+		// margin-bottom: 30px;
+	}
+
+	@include desktop {
+		width: calc(100% / 3 - 39px);
+		margin-right: 39px;
+	}
+}
+/* .sights styles end*/

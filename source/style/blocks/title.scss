@@ -1,0 +1,150 @@
+/* .title styles */
+	.title {
+		font-family: $ff-playfair;
+		font-weight: bold;
+		text-align: center;
+		color: #000;
+		position: relative;
+		margin-bottom: 0;
+		.title__inner {
+			display: inline-block;	
+			position: relative;
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+				height: 4px;
+				top: 50%;
+				margin-top: -2px;
+			}
+
+			&::before {
+				
+			}
+
+			&::after {
+				
+				background-color: $brown;
+			}
+		}
+
+		@include mobile {
+			padding: 0 50px;
+
+			.title__inner {
+				font-size: 2rem;
+				&::before {
+					left: -40px;
+				}
+
+				&::after {
+					right: -40px;
+				}
+
+				&::before,
+				&::after {
+					width: 20px;
+				}
+			}
+		}
+
+		@include tablet {
+			
+
+			max-width: 728px;
+		}
+
+		@include tabdesk {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		@include desktop {
+			max-width: 991px;
+		}
+
+		&_default {
+			.title__inner {
+				&::before{
+					background-color: $brown;
+				}
+			}
+
+			@include mobile {
+				.title__inner {
+					
+				}
+			}
+
+			@include tablet {
+				
+				
+				.title__inner {
+					font-size: 2.5rem;
+				}
+			}
+
+			@include tabdesk {
+				padding-left: 70px;
+				padding-right: 70px;
+				.title__inner {
+					&::before,
+					&::after {
+						width: 50px;
+					}
+
+					&::before {
+						left: -70px;
+					}
+
+					&::after {
+						right: -70px;
+					}
+				}
+			}
+
+			@include desktop {
+				.title__inner {
+					font-size: 3rem;
+				}
+			}
+		}//_default
+
+		&_custom {
+			.title__inner {
+				&::before {
+					background-color: $l-grey;
+				}
+			}
+
+			@include tablet {
+				font-size: 3rem;
+			}
+
+			@include tabdesk {
+				padding-left: 190px;
+				padding-right: 190px;
+				.title__inner {
+					&::before,
+					&::after {
+						width: 170px;
+					}
+
+					&::before {
+						left: -190px;
+					}
+
+					&::after {
+						right: -190px;
+					}
+				}
+			}
+
+			@include desktop {
+				.title__inner {
+					font-size: 3.5rem;
+				}
+			}
+		}//_custom
+	}//.title
+/* .title styles end*/

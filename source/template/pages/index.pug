@@ -1,0 +1,66 @@
+extends ../tpl/_template
+
+block variables
+	- var title = 'S-Meню страниц'
+
+block content
+	+b.UL.page-menu
+		+e.item: +e.link(href="home-page.html", target="_blank") Главная
+		+e.item: +e.link(href="booking.html", target="_blank") Бронирование
+		+e.item: +e.link(href="booking-success.html", target="_blank") Бронирование успешно
+		+e.item: +e.link(href="rooms.html", target="_blank") Номера
+		+e.item: +e.link(href="blog-index.html", target="_blank") Блог- главная
+		+e.item: +e.link(href="blog-inside.html", target="_blank") Блог, внутренняя страница
+		+e.item: +e.link(href="service.html", target="_blank") Сервис
+		+e.item: +e.link(href="contacts.html", target="_blank") Контакты
+		+e.item: +e.link(href="photo.html", target="_blank") Про гостиницы и фотогаллерея
+		+e.item: +e.link(href="feedbacks.html", target="_blank") Отзывы
+		+e.item: +e.link(href="feedbacks_success.html", target="_blank") Отзывы успешно
+
+	//- // +b.intro
+	//- // 	+e.top добро пожаловать
+	//- // 	+e.H1.title.title_default: .title__inner: b Гостиницу "Сурхон"
+	//- // 	+e.bottom Проведите комфорно ваши дни в городе Термез
+	//- // +b.index-slider
+	//- // 	+e.inner
+	//- // 		+b.main-slider_js
+	//- // 			each photo in ['1','1','1']
+	//- // 				+e.item: img(src=`./assets/pics/pic-slider-${photo}.jpg`)
+	//- // +b.reserve
+	//- // 	+e.inner
+	//- // 		+e.title.subtitle Онлайн бронирование
+	//- // 		form
+	//- // 			+e.form
+	//- // 				+e.UL.input-list
+	//- // 					each inputField in reserving
+	//- // 						+e.input-item
+	//- // 							+symbol('20','20',`${inputField.icon}`)
+	//- // 							if inputField.class === "date"
+	//- // 								+e.INPUT.input.input_date(type="text", placeholder=`${inputField.text}`, readonly)
+	//- // 							else
+	//- // 								+e.INPUT.input.input(type="text", placeholder=`${inputField.text}`)
+	//- // 				+e.BUTTON.btn.btn_dark(type="submit") Продолжить бронирование
+	//- // +b.index-rooms
+	//- // 	+e.inner
+	//- // 		+e.title.subtitle Онлайн бронирование
+	//- // 		+e.UL.list
+	//- // 			each room in indexRooms
+	//- // 				+e.item
+	//- // 					+b.card
+	//- // 						+e.image: img(src="./assets/pics/pic-room-small.jpg", alt)
+	//- // 						+e.content
+	//- // 							+e.title(href="#")= room.title
+	//- // 							+e.price
+	//- // 								|от &nbsp;
+	//- // 								.price 140 000 сум
+	//- // 							+e.descr= room.descr
+	//- // 							+e.btn.btn_dark._default(href="#") подробнее
+	//- // +b.about
+	//- // 	+e.H1.title.title_custom: .title__inner: b Гостиница "Сурхон"
+	//- // 	+e.inner
+	//- // 		+e.image: img(src="./assets/pics/pic-hotel-index.jpg", alt)
+	//- // 		+e.descr
+	//- // 			+e.text
+	//- // 				|Отель «Surxon» расположен в центре города, в 15 минутах езды от международного аэропорта, в 10 минутах от авто вокзала и в 5 минутах ходьбы от железнодорожной станции. Размещение осуществляется в 4-этажных здание с 83 номерами на 130 мест (33 Singles, 45 двухместных, 3 Полулюкс, 1 Делюкс, и 1 люкс). Для делового общения имеет международные и междугородние телефонные, бизнес-центр, факс и Интернет. факс и Интернет.факс и Интернет.
+	//- // 			+e.btn.btn_light(href="#") Прочитать и посмотреть фотографии
+

@@ -1,0 +1,34 @@
+block scripts
+	//- link(rel='stylesheet' href='./assets/css/fonts.css')
+	//- link(rel='stylesheet' href='./assets/css/vendor.css')
+	//- link(rel='stylesheet' href='./assets/css/style.css')
+
+	script(src='./assets/js/jquery.min.js' defer)
+	//- script(src='./assets/js/slick.min.js' defer)
+	script(src='./assets/js/vendor.js' defer)
+	//- script(src='./assets/js/libs.js' defer)
+	script(src='./assets/js/main.js' defer)
+	script(src='./assets/js/modal.js' defer)
+
+	script.
+		(function (doc) {
+					var scripts = doc.getElementsByTagName('script')
+					var script = scripts[scripts.length - 1]
+					var xhr = new XMLHttpRequest()
+					xhr.onload = function () {
+						var div = doc.createElement('div')
+						div.innerHTML = this.responseText
+						div.style.display = 'none'
+						script.parentNode.insertBefore(div, script)
+					}
+					xhr.open('get', './assets/img/sprite-sym.svg', true)
+					xhr.send()
+				})(document)
+
+
+	<!--[if lt IE 10 ]>
+	<p class="chromeframe" style="background-color:yellow;">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/?locale=ru" style="color: red; font-weight: bold;">Скачайте новый браузер абсолютно бесплатно</a> или <a href="http://www.google.com/chromeframe/?redirect=true">активируй Google Chrome Frame</a>чтобы пользоваться всеми возможностями сайта.</p>
+	<![endif]-->
+	<!-- Custom Browsers Color Start -->
+	<!-- Chrome, Firefox OS and Opera -->
+	//- Optimized loading JS End

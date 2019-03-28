@@ -1,0 +1,11 @@
+/* .striped-link styles */
+	.striped-link {
+		display: inline-block;
+		color: $grey;
+		border-bottom: 1px dashed $grey;
+
+		&:hover {
+			border-bottom-color: transparent;
+		}
+	}
+/* .striped-link styles end*/

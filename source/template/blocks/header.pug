@@ -1,0 +1,23 @@
++b.HEADER.page-header
+	+e.inner
+		+e.menu-btn(href="#")
+			+b.hamburger
+				.bar.bar-1
+				.bar.bar-3
+				.bar.bar-2
+		+e.logo(href="#")
+				picture
+					source(media="(min-width:768px) and (max-width: 1280px)", srcset="./assets/img/logo-tablet.svg")
+					img(src="./assets/img/logo-mobile.svg" alt="")
+		+e.info
+			+e.lang(href="#")
+				+b.lang
+					.iconimg
+						img(src="./assets/img/icon-flag.svg", alt)
+					.text English version
+			+e.contacts
+				+b.contacts
+					+e.tel.tel(href="tel:+998762240707")
+						+symbol('16','16','#icon-phone')
+						.text +998 76 224-07-07
+					+e.worktime Режим работы: Круглосуточно

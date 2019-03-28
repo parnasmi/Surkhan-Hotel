@@ -1,0 +1,251 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+//Adjustment vars
+
+
+$footer-height: 249px;
+$mobile-footer-height: 529px;
+$tablet-footer-height: 226px;
+$brown: #d1a35a;
+$d-brown: #B48842;
+$grey: #808080;
+$l-grey: #dfdfdf;
+$bg-grey: #F4F4F4;
+$green: #77bd22;
+$dark: #000;
+
+
+//** Background color for `<body>`.
+$body-bg:               #fff;
+
+//** Global text color on `<body>`.
+$text-color:            $grey;
+
+//** Global textual link color.
+$link-color:            $brown;
+
+$link-hover-color:      $d-brown;
+
+
+$ff-regular: 'pt_sans', Helvetica, sans-serif;
+$ff-playfair: 'playfair_display', "Arial", cursive, sans-serif;
+
+$font-size-base:          14px;
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.428571429; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor(($font-size-base * $line-height-base)); // ~20px
+
+
+
+// Reset the box-sizing
+// 
+// Heads up! This reset may cause conflicts with some third-party widgets.
+// For recommendations on resolving such conflicts, see
+// http://getbootstrap.com/getting-started/#third-box-sizing
+
+* {
+	box-sizing:border-box;
+}
+
+*:before,
+*:after {
+	box-sizing:border-box;
+}
+
+// Body reset
+html {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	font-size: 62.5%;
+	// position: relative;
+	// max-width: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: $ff-regular;
+	font-size: $font-size-base;
+	font-weight: 400;
+	line-height: $line-height-base;
+	-webkit-font-smoothing: antialiased;
+	color: $text-color;
+	background-color: $bg-grey;
+	min-width: 320px;
+	overflow-x: hidden;
+	max-width: 100%;
+	height: 100%;
+}
+
+html, body {
+	// height: 100%;
+
+	&.freeze {
+		margin: 0; height: 100%; overflow: hidden
+	}
+}
+
+.outer-wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.page-footer {
+  flex: 0 0 auto;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+}
+
+// .wrapper {
+// 	min-height: 100%;
+// 	position: relative;
+// 	width: 100%;
+// 	overflow: hidden;
+// }
+
+// footer.page-footer {
+// 	width: 100%;
+// 	position: relative;
+// }
+
+// .wrapper:after {
+// 	content: "";
+// 	display: block;
+// 	overflow: hidden;
+// }
+
+
+
+@media #{$mobileonly} {
+	// .wrapper::after {
+	// 	min-height: $mobile-footer-height;
+	// }
+
+	// footer.page-footer {
+	// 	min-height: $mobile-footer-height;
+	// 	margin-top: -$mobile-footer-height;
+	// }
+}
+
+@media #{$mobtabonly} {
+
+}//@media (max-width: 1023px) 
+
+
+/* --Only Tablet Styles !!! 768 < || 1023-- */
+@media #{$tabonly} {
+	// .wrapper::after {
+	// 	min-height: $tablet-footer-height;
+	// }
+
+	// footer.page-footer {
+	// 	height: $tablet-footer-height;
+	// 	margin-top: -$tablet-footer-height;
+	// }
+}
+
+/* --Desktop Media queries-- */
+@media #{$deskonly} {
+	// .wrapper {
+	// 	// margin-top: -$footer-height;
+	// }
+	// .wrapper::after {
+	// 	min-height: $footer-height;
+
+	// }
+
+	// footer.page-footer {
+	// 	min-height: $footer-height;
+	// 	margin-top: -$footer-height;
+	// }
+}
+
+
+.visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+i {
+	font-style: normal;
+}
+
+
+// Links
+
+a {
+	text-decoration: none;
+	transition: all .3s;
+}
+
+a[href]:not([class]) {
+  // color: #008000;
+  text-decoration: underline;
+  color: $brown;
+
+  &:hover {
+  	text-decoration: none;
+  	color: $d-brown;
+  }
+}
+
+// Figures
+//
+// We reset this here because previously Normalize had no `figure` margins. This
+// ensures we don't break anyone's use of the element.
+
+figure {
+	margin: 0;
+}
+
+button {
+	bottom: 0;
+	border: none;
+}
+
+
+// iOS "clickable elements" fix for role="button"
+//
+// Fixes "clickability" issue (and more generally, the firing of events such as focus as well)
+// for traditionally non-focusable elements with role="button"
+// see https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
+
+[role="button"] {
+	cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	
+	margin-top: 0;
+}
+
+
+p {
+  margin: 0;
+}
+
+
+// .wow { visibility: hidden; }
+

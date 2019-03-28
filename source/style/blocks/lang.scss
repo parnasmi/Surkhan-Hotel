@@ -1,0 +1,23 @@
+/* .lang styles */
+	.lang {
+		@include iconed;
+		font-size: 1.3rem;
+		.iconimg {
+			width: 25px;
+			height: 13px;
+			position: relative;
+			margin-right: 10px;
+			img {
+				@include img-center;
+				// max-height: 100%;
+				max-width: 100%;
+				height: auto;
+			}
+		}
+
+		.text {
+			position: relative;
+			top: 2px;
+		}
+	}
+/* .lang styles end*/

@@ -1,0 +1,99 @@
+extends ../tpl/_template
+
+block variables
+	- var title = 'S-Бронивание'
+
+block content
+	+b.intro
+		+e.H1.title.title_default: .title__inner: b Бронирование
+		+e.bottom Забронируйте заранее номер и вы не останетесь на улице
+	+b.booking
+		+e.inner
+			+e.content
+				form
+					+e.form
+						+e.inp-row_dual
+							+e.inp-col
+								+e.LABEL.label.label
+									b Дата заезда
+									+b.input-wrapper_iconed_right
+										+b.INPUT.input_default._iconed._date(readonly)
+										+symbol('20','20','#icon-calendar')
+							+e.inp-col
+								+e.LABEL.label.label
+									b Дата выезда
+									+b.input-wrapper_iconed_right
+										+b.INPUT.input_default._iconed._date(readonly)
+										+symbol('20','20','#icon-calendar')
+						+e.inp-row_dual
+							+e.inp-col
+								+e.LABEL.label.label
+									b Количество взрослых
+									+b.input-wrapper
+										+b.SELECT.select
+											option 1
+											option 2
+											option 3
+							+e.inp-col
+								+e.LABEL.label.label
+									b Количество детей
+									+b.input-wrapper
+										+b.SELECT.select
+											option 0
+											option 1
+											option 2
+						+e.inp-row
+							+e.inp-col
+								+e.LABEL.label.label
+									b Номер
+									+b.input-wrapper
+										+b.SELECT.select
+											option Стандарт (от 140 000 сум)
+											option Стандарт 2 (от 140 000 сум)
+											option Стандарт 3 (от 140 000 сум)
+						+e.inp-row
+							+e.inp-col
+								+e.LABEL.label.label
+									+e.INPUT.checkbox(type="checkbox")
+									strong Включить завтрак (Шведский стол)
+									.price +60 000 сум
+							+e.inp-col: +e.breakfast.striped-link(href="#") Посмотреть фото
+							+e.gallery#breakfast
+								a(href="./assets/pics/pic-table-1.jpeg")
+								a(href="./assets/pics/pic-table-2.jpg")
+								a(href="./assets/pics/pic-table-3.jpg")
+						+e.inp-row
+							+e.inp-col
+								+e.LABEL.label.label
+									b Имя и фамилия
+									+b.input-wrapper
+										+b.INPUT.input_default(type="text")
+						+e.inp-row_citizenship
+							+e.inp-col
+								+e.LABEL.label.label
+									+e.INPUT.radio(type="radio", name="cit")
+									span Гражданин Республики Узбекистан
+							+e.inp-col
+								+e.LABEL.label.label
+									+e.INPUT.radio(type="radio", name="cit")
+									span Иностранный гражданин
+						+e.inp-row
+							+e.inp-col
+								+e.LABEL.label.label
+									b Телефон номер в международном формате
+									+b.input-wrapper
+										+b.INPUT.input_default(type="tel")
+						+e.inp-row
+							+e.inp-col
+								+e.LABEL.label.label
+									b E-mail
+									+b.input-wrapper
+										+b.INPUT.input_default(type="email")
+						+e.inp-row
+							+e.inp-col
+								+e.BUTTON.btn.btn_dark(type="submit") забронировать
+
+
+
+
+

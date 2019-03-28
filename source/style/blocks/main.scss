@@ -1,0 +1,59 @@
+/* .main styles */
+	.main {
+		position: relative;
+
+		@include desktop {
+			flex: 1;
+		}
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+		}
+
+
+		&::before {
+			height: 340px;
+			background-image: linear-gradient(to top, rgba(255, 255, 255, 0), #ffffff);
+			left: 0;
+			z-index: -2;
+			width: 100%;
+		}
+
+		&::after {
+			z-index: -1;
+			height: 252px;
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			background-size: cover;
+			@include centered(x);
+		}
+
+		@include mobile {
+			&::after {
+				width: 250px;
+				background-image: url("../img/bg-skew-mob.svg");
+				margin-left: -30px;
+			}
+		}
+
+		@include mobtab {
+			padding-top: 20px;
+		}
+
+		@include tabdesk {
+			padding-bottom: 30px;
+			&::after {
+				width: 390px;
+				background-image: url("../img/bg-skew-desk.svg");
+
+			}
+		}
+
+		@include desktop {
+			padding-top: 50px;
+		}
+	}
+/* .main styles end*/

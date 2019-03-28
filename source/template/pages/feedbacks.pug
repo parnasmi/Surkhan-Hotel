@@ -1,0 +1,124 @@
+extends ../tpl/_template
+
+block variables
+	- var title = 'S-Отзывы'
+
+block content
+	+b.intro
+		+e.H1.title.title_default: .title__inner: b Отзывы гостиницы Сурхан
+		+e.bottom Мы публикуем все отзывы, будь это хорошим или плохим. Нам важен мнение наших постояльцев
+	+b.fdb-page
+		+e.inner
+			+e.content
+				+e.header
+					+e.head-descr
+						+e.H3.head-title Напишите свое мнение о нашем гостинице.
+						+e.muted-text Помогите нам стать лучше.
+					+e.head-btn.btn_dark(href="#feedback-form") НАПИСАТЬ ОТЗЫВ
+				+e.UL.list
+					each feedback in feedbacks
+						+e.item
+							+b.ARTICLE.feedback
+								+e.body
+									+e.HEADER.header
+										+e.title= feedback.user
+										+e.rating.rating
+											.rating__title Оценка гостя
+											.rating__stars
+												+b.UL.stars
+													- for(var i = 1; i <= 5; i++)
+															if i <= feedback.rating
+																LI(class=`stars__item full`)
+																	svg(class="icon", width="19", height="18")
+																		use(xlink:href="#icon-star")
+															else
+																LI(class=`stars__item`)
+																	svg(class="icon", width="19", height="18")
+																		use(xlink:href="#icon-star")
+									+e.descr
+										+e.text= feedback.text
+										//- +e.FOOTER.footer
+										+e.live-date.mute-text
+											span Проживание:
+											span= feedback.liveDate
+										+e.feedb-date.mute-text
+											span Отзыв написан:
+											span= feedback.feedbDate
+								if feedback.hasReply === true
+									+e.reply
+										+e.reply-owner
+											+src('img','icon-avatar.svg')
+											strong Администрация “Сурхон” гостиницы
+										+e.reply-text= feedback.replyText
+			+e.show-more.btn_light(href="", id="feedback-button") Показать еще записи
+		+b.fdb-form#feedback-form.mfp-hide
+			+e.close-btn.popup-close-btn(href="#")
+			+e.inner
+				+e.content
+					+e.H2.title Написать отзыв
+					form
+						+e.rating
+							+b.rate-it
+								+e.title Ваша оценка
+								+e.stars
+									fieldset.rating-inputs
+										input(type="radio",id="star5",name="rating",value="5")
+										label.full(for="star5",title="Здорово - 5 звезд")
+										input(type="radio",id="star4",name="rating",value="4")
+										label.full(for="star4",title="Довольно хорошо - 4 звезд")
+										input(type="radio",id="star3",name="rating",value="3")
+										label.full(for="star3",title="Пойдет - 3 звезд")
+										input(type="radio",id="star2",name="rating",value="2")
+										label.full(for="star2",title="Плохо - 2 звезд")
+										input(type="radio",id="star1",name="rating",value="1")
+										label.full(for="star1",title="Отстой - 1 звезд")
+								+e.clear(href="#") очистить
+						+e.form
+							+e.inp-row
+								+e.LABEL.label.label
+									b Имя и фамилия
+									+b.input-wrapper
+										+b.INPUT.input_default(type="text", required)
+										span.error-msg Это поля объязательно для заполнения
+							+e.inp-row
+								+e.LABEL.label.label
+									b В каком месяце вы у нас остановливались?
+									+b.input-wrapper_iconed_right
+										+b.INPUT.input_default._iconed._date(readonly)
+										+symbol('20','20','#icon-calendar')
+							+e.inp-row
+								+e.LABEL.label.label
+										b Номер
+										+b.input-wrapper
+											+b.SELECT.select
+												option Стандарт (от 140 000 сум)
+												option Стандарт 2 (от 140 000 сум)
+												option Стандарт 3 (от 140 000 сум)
+							+e.inp-row
+								+e.LABEL.label.label
+									b Отзыв
+									+b.input-wrapper
+										+b.TEXTAREA.input_default._feedback(placeholder="Поделитесь вашим мнением, напишите как вы проверили время в нашем гостинице")
+							+e.inp-row
+								+e.LABEL.label.label
+									b Не публичная часть (не объязательно)
+									+b.input-wrapper
+										+b.TEXTAREA.input_default._sec-feedback(placeholder="Если у вас не публичное сообщение или отзыв, вы можете его сюда написать. Что тут написано, не будет опубликовано на сайте.")
+							+e.inp-row
+								+e.recaptcha
+									img(src="./assets/img/captcha.png", alt)
+							+e.BUTTON.btn.btn_dark(type="submit") написать отзыв
+				+e.success
+					+e.success-icon: +src('img','icon-success.svg')
+					+e.success-title Спасибо за отзыв!
+					+e.success-descr После проверки отзыва модератором, мы его опубликуем
+					+e.success-btn.btn_light._default(href="#") закрыть
+				+e.is-sending
+					+e.is-sending-preloader
+					+e.is-sending-text Идет отправка
+
+
+
+
+
+

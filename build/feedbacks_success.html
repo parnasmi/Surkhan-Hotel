@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>S-Отзывы</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/vendor.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/user.css">
+    <!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+    <!--[if lt IE 10 ]>
+<p class="chromeframe" style="background-color:yellow;">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/?locale=ru" style="color: red; font-weight: bold;">Скачайте новый браузер абсолютно бесплатно</a> или <a href="http://www.google.com/chromeframe/?redirect=true">активируй Google Chrome Frame</a>чтобы пользоваться всеми возможностями сайта.</p>
+<![endif]-->
+    <!-- Custom Browsers Color Start -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <!-- Custom Browsers Color End -->
+  </head>
+  <body>
+    <div class="page-preloader">
+      <div class="inner-loader"></div>
+    </div>
+    <div class="outer-wrapper">
+      <div class="wrapper">
+        <header class="page-header">
+          <div class="page-header__inner">
+            <a class="page-header__menu-btn" href="#">
+              <span class="hamburger">
+                <div class="bar bar-1"></div>
+                <div class="bar bar-3"></div>
+                <div class="bar bar-2"></div>
+              </span>
+            </a>
+            <a class="page-header__logo" href="#">
+              <picture>
+                <source media="(min-width:768px) and (max-width: 1280px)" srcset="./assets/img/logo-tablet.svg">
+                <img src="./assets/img/logo-mobile.svg" alt=""> </picture>
+            </a>
+            <div class="page-header__info">
+              <a class="page-header__lang" href="#">
+                <span class="lang">
+                  <div class="iconimg">
+                    <img src="./assets/img/icon-flag.svg" alt>
+                  </div>
+                  <div class="text">English version</div>
+                </span>
+              </a>
+              <div class="page-header__contacts">
+                <div class="contacts">
+                  <a class="contacts__tel tel" href="tel:+998762240707">
+                    <svg class="icon" width="16" height="16">
+                      <use xlink:href="#icon-phone"></use>
+                    </svg>
+                    <div class="text">+998 76 224-07-07</div>
+                  </a>
+                  <div class="contacts__worktime">Режим работы: Круглосуточно </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <aside class="sidebar">
+          <div class="sidebar__logo">
+            <a class="logo" href="#">
+              <img src="./assets/img/logo-desktop.svg" alt="">
+            </a>
+          </div>
+          <div class="sidebar__menu">
+            <div class="menu">
+              <ul class="menu__list">
+                <li class="menu__i">
+                  <a class="menu__l" href="#">Главная</a>
+                </li>
+                <li class="menu__i">
+                  <a class="menu__l" href="#">Услуги</a>
+                </li>
+                <li class="menu__i">
+                  <a class="menu__l" href="#">Новости</a>
+                </li>
+                <li class="menu__i active">
+                  <a class="menu__l" href="#">О гостинице</a>
+                </li>
+                <li class="menu__i">
+                  <a class="menu__l" href="#">Фотогаллерея</a>
+                </li>
+                <li class="menu__i">
+                  <a class="menu__l" href="#">Контакты</a>
+                </li>
+                <li class="menu__i">
+                  <a class="menu__l" href="#">Отзывы</a>
+                </li>
+                <li class="menu__i">
+                  <a class="menu__l" href="#">Бронирование</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="sidebar__contacts">
+            <div class="contacts">
+              <a class="contacts__tel tel" href="tel:+998762240707">
+                <svg class="icon" width="16" height="16">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
+                <div class="text">+998 76 224-07-07</div>
+              </a>
+              <div class="contacts__worktime">Режим работы: Круглосуточно </div>
+            </div>
+          </div>
+          <a class="sidebar__lang" href="#">
+            <span class="lang">
+              <div class="iconimg">
+                <img src="./assets/img/icon-flag.svg" alt>
+              </div>
+              <div class="text">English version</div>
+            </span>
+          </a>
+        </aside>
+        <div class="sidebar-overlay"></div>
+        <main class="main">
+          <div class="intro">
+            <h1 class="intro__title title title_default">
+              <div class="title__inner">
+                <b>Отзывы гостиницы Сурхан</b>
+              </div>
+            </h1>
+            <div class="intro__bottom">Мы публикуем все отзывы, будь это хорошим или плохим. Нам важен мнение наших постояльцев </div>
+          </div>
+          <div class="fdb-page">
+            <div class="fdb-page__inner">
+              <div class="fdb-page__content">
+                <div class="fdb-page__header">
+                  <div class="fdb-page__head-descr">
+                    <h3 class="fdb-page__head-title">Напишите свое мнение о нашем гостинице. </h3>
+                    <div class="fdb-page__muted-text">Помогите нам стать лучше. </div>
+                  </div>
+                  <a class="fdb-page__head-btn btn btn_dark" href="#feedback-form">НАПИСАТЬ ОТЗЫВ</a>
+                </div>
+                <ul class="fdb-page__list">
+                  <li class="fdb-page__item">
+                    <article class="feedback">
+                      <div class="feedback__body">
+                        <header class="feedback__header">
+                          <div class="feedback__title">Сайдуллаев Фарход </div>
+                          <div class="feedback__rating rating">
+                            <div class="rating__title">Оценка гостя</div>
+                            <div class="rating__stars">
+                              <ul class="stars">
+                                <LI class="stars__item full">
+                                  <svg class="icon" width="19" height="18">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </LI>
+                                <LI class="stars__item full">
+                                  <svg class="icon" width="19" height="18">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </LI>
+                                <LI class="stars__item full">
+                                  <svg class="icon" width="19" height="18">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </LI>
+                                <LI class="stars__item full">
+                                  <svg class="icon" width="19" height="18">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </LI>
+                                <LI class="stars__item">
+                                  <svg class="icon" width="19" height="18">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </LI>
+                              </ul>
+                            </div>
+                          </div>
+                        </header>
+                        <div class="feedback__descr">
+                          <div class="feedback__text">Очень понравилось в &quot;Северной&quot;. отель находится в центре города, но в номере было не шумно, хоть это и главная улица. Интерьер отеля очень интересный, что-то в нем есть завораживающе-историческое, видно, что владельцы
+                            не забывают о прошлом отеля - на стенах есть фотографии того, как отель выглядел десятилетия назад, а также первых сотрудников, работавших там. Номер просторный, с хорошей мебелью. Завтрак шведски стол - что любишь, то и выбираешь.
+                            Вечером тут же и ужинали, всё было вкусно и быстро. </div>
+                          <div class="feedback__live-date mute-text">
+                            <span>Проживание:</span>
+                            <span>Апрель 2018 г.</span>
+                          </div>
+                          <div class="feedback__feedb-date mute-text">
+                            <span>Отзыв написан:</span>
+                            <span>29 апреля 2018 г.</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="feedback__reply">
+                        <div class="feedback__reply-owner">
+                          <img src="./assets/img/icon-avatar.svg" alt>
+                          <strong>Администрация “Сурхон” гостиницы</strong>
+                        </div>
+                        <div class="feedback__reply-text">Спасибо большое за теплые слова. Мы будем дальше старатся держать наш сервис на высоте. </div>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="fdb-page__item">
+                    <article class="feedback">
+                      <div class="feedback__body">
+                        <header class="feedback__header">
+                          <div class="feedback__title">Михаил </div>
+                          <div class="feedback__rating rating">
+                            <div class="rating__title">Оценка гостя</div>
+                            <div class="rating__stars">
+                              <ul class="stars">
+                                <LI class="stars__item full">
+                                  <svg class="icon" width="19" height="18">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </LI>
+                                <LI class="stars__item full">
+                                  <svg class="icon" width="19" height="18">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </LI>
+                                <LI class="stars__item full">
+                                  <svg class="icon" width="19" height="18">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </LI>
+                                <LI class="stars__item full">
+                                  <svg class="icon" width="19" height="18">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </LI>
+                                <LI class="stars__item full">
+                                  <svg class="icon" width="19" height="18">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </LI>
+                              </ul>
+                            </div>
+                          </div>
+                        </header>
+                        <div class="feedback__descr">
+                          <div class="feedback__text">Номер современный, есть все необходимое для отдыха:просторная ванная комната, душевая кабина, фен, телевизор, холодильник. Помещение оформлено в едином стиле, а матрацы просто восхитительные!!!Спасибо))) </div>
+                          <div class="feedback__live-date mute-text">
+                            <span>Проживание:</span>
+                            <span>Апрель 2018 г.</span>
+                          </div>
+                          <div class="feedback__feedb-date mute-text">
+                            <span>Отзыв написан:</span>
+                            <span>Отзыв написан 29 апреля 2018 г.</span>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="fdb-page__item">
+                    <article class="feedback">
+                      <div class="feedback__body">
+                        <header class="feedback__header">
+                          <div class="feedback__title">Сайдуллаев Фарход </div>
+                          <div class="feedback__rating rating">
+                            <div class="rating__title">Оценка гостя</div>
+                            <div class="rating__stars">
+                              <ul class="stars">
+                                <LI class="stars__item full">
+                                  <svg class="icon" width="19" height="18">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </LI>
+                                <LI class="stars__item full">
+                                  <svg class="icon" width="19" height="18">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </LI>
+                                <LI class="stars__item full">
+                                  <svg class="icon" width="19" height="18">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </LI>
+                                <LI class="stars__item">
+                                  <svg class="icon" width="19" height="18">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </LI>
+                                <LI class="stars__item">
+                                  <svg class="icon" width="19" height="18">
+                                    <use xlink:href="#icon-star"></use>
+                                  </svg>
+                                </LI>
+                              </ul>
+                            </div>
+                          </div>
+                        </header>
+                        <div class="feedback__descr">
+                          <div class="feedback__text">У меня сложилось следующее впечатление. Отель, скажем так, очень среднего уровня для неискушенного или ко всему привыкшего туриста. </div>
+                          <div class="feedback__live-date mute-text">
+                            <span>Проживание:</span>
+                            <span>1 января 2018 г.</span>
+                          </div>
+                          <div class="feedback__feedb-date mute-text">
+                            <span>Отзыв написан:</span>
+                            <span>29 апреля 2018 г.</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="feedback__reply">
+                        <div class="feedback__reply-owner">
+                          <img src="./assets/img/icon-avatar.svg" alt>
+                          <strong>Администрация “Сурхон” гостиницы</strong>
+                        </div>
+                        <div class="feedback__reply-text">Добрый день! Благодарим Вас за выбор гостиницы &quot;Северная&quot; и за Ваш подробный отзыв! Нам очень приятно, что Вы отметили чистоту в номерах и качество работы персонала гостиницы. Относительно ремонта, мы, безусловно, с Вами
+                          согласны. В части номерного фонда реновация уже проведена, постепенно мы планируем осуществить её и в остальных номерах, в том числе заменить мебель и оснащение. Надеемся, во время Вашей следующей поездки в Петрозаводск Вы вновь
+                          остановитесь в гостинице &quot;Северная&quot; и сможете оценить изменения к лучшему. </div>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+              </div>
+              <div class="fdb-page__show-more btn btn_light" href="" id="feedback-button">Показать еще записи </div>
+            </div>
+            <div class="fdb-form fdb-form_success" id="feedback-form">
+              <a class="fdb-form__close-btn popup-close-btn" href="#"></a>
+              <div class="fdb-form__inner">
+                <div class="fdb-form__content">
+                  <h2 class="fdb-form__title">Написать отзыв </h2>
+                  <form>
+                    <div class="fdb-form__rating">
+                      <div class="rate-it">
+                        <div class="rate-it__title">Ваша оценка </div>
+                        <div class="rate-it__stars">
+                          <fieldset class="rating-inputs">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label class="full" for="star5" title="Здорово - 5 звезд"></label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label class="full" for="star4" title="Довольно хорошо - 4 звезд"></label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label class="full" for="star3" title="Пойдет - 3 звезд"></label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label class="full" for="star2" title="Плохо - 2 звезд"></label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label class="full" for="star1" title="Отстой - 1 звезд"></label>
+                          </fieldset>
+                        </div>
+                        <a class="rate-it__clear" href="#">очистить</a>
+                      </div>
+                    </div>
+                    <div class="fdb-form__form">
+                      <div class="fdb-form__inp-row">
+                        <label class="fdb-form__label label">
+                          <b>Имя и фамилия</b>
+                          <span class="input-wrapper">
+                            <input class="input input_default" type="text" />
+                          </span>
+                        </label>
+                      </div>
+                      <div class="fdb-form__inp-row">
+                        <label class="fdb-form__label label">
+                          <b>В каком месяце вы у нас остановливались?</b>
+                          <span class="input-wrapper input-wrapper_iconed_right">
+                            <input class="input input_default input_iconed input_date" readonly="readonly" type="text" />
+                            <svg class="icon" width="20" height="20">
+                              <use xlink:href="#icon-calendar"></use>
+                            </svg>
+                          </span>
+                        </label>
+                      </div>
+                      <div class="fdb-form__inp-row">
+                        <label class="fdb-form__label label">
+                          <b>Номер</b>
+                          <span class="input-wrapper">
+                            <select class="select">
+                              <option>Стандарт (от 140 000 сум)</option>
+                              <option>Стандарт 2 (от 140 000 сум)</option>
+                              <option>Стандарт 3 (от 140 000 сум)</option>
+                            </select>
+                          </span>
+                        </label>
+                      </div>
+                      <div class="fdb-form__inp-row">
+                        <label class="fdb-form__label label">
+                          <b>Отзыв</b>
+                          <span class="input-wrapper">
+                            <textarea class="input input_default" placeholder="Поделитесь вашим мнением, напишите как вы проверили время в нашем гостинице"></textarea>
+                          </span>
+                        </label>
+                      </div>
+                      <div class="fdb-form__inp-row">
+                        <label class="fdb-form__label label">
+                          <b>Не публичная часть (не объязательно)</b>
+                          <span class="input-wrapper">
+                            <textarea class="input input_default" placeholder="Если у вас не публичное сообщение или отзыв, вы можете его сюда написать. Что тут написано, не будет опубликовано на сайте."></textarea>
+                          </span>
+                        </label>
+                      </div>
+                      <div class="fdb-form__inp-row">
+                        <div class="fdb-form__recaptcha">
+                          <img src="./assets/img/captcha.png" alt> </div>
+                      </div>
+                      <button class="fdb-form__btn btn btn_dark" type="submit">написать отзыв </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="fdb-form__success">
+                  <div class="fdb-form__success-icon">
+                    <img src="./assets/img/icon-success.svg" alt> </div>
+                  <div class="fdb-form__success-title">Спасибо за отзыв! </div>
+                  <div class="fdb-form__success-descr">После проверки отзыва модератором, мы его опубликуем </div>
+                  <a class="fdb-form__success-btn btn btn_light btn_default" href="#">закрыть</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer class="page-footer">
+        <footer class="page-footer">
+          <div class="page-footer__top">
+            <div class="page-footer__info">
+              <div class="page-footer__h-name">Гостиница Сурхон Термез </div>
+              <div class="page-footer__h-address">Адрес: ул. Ат-Термизий, дом 27, Узбекистан, Сурхандарьинская область, город Термез </div>
+              <a class="page-footer__h-map" href="#">
+                <svg class="icon" width="8" height="11">
+                  <use xlink:href="#icon-location"></use>
+                </svg>
+                <div class="text">Карта проезда</div>
+              </a>
+            </div>
+            <div class="page-footer__menu-wrapper">
+              <div class="page-footer__menu">
+                <div class="page-footer__menu-i">
+                  <a class="page-footer__menu-l" href="#">Главная</a>
+                </div>
+                <div class="page-footer__menu-i">
+                  <a class="page-footer__menu-l" href="#">Номера</a>
+                </div>
+                <div class="page-footer__menu-i">
+                  <a class="page-footer__menu-l" href="#">Услуги</a>
+                </div>
+                <div class="page-footer__menu-i">
+                  <a class="page-footer__menu-l" href="#">Новости</a>
+                </div>
+                <div class="page-footer__menu-i">
+                  <a class="page-footer__menu-l" href="#">О гостинице</a>
+                </div>
+                <div class="page-footer__menu-i">
+                  <a class="page-footer__menu-l" href="#">Фотогаллерея</a>
+                </div>
+                <div class="page-footer__menu-i">
+                  <a class="page-footer__menu-l" href="#">Контакты</a>
+                </div>
+                <div class="page-footer__menu-i">
+                  <a class="page-footer__menu-l" href="#">Бронирование</a>
+                </div>
+              </div>
+            </div>
+            <div class="page-footer__contacts">
+              <a class="page-footer__tel tel" href="tel:+998762240707">
+                <svg class="icon" width="16" height="16">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
+                <div class="text">+998 76 224-07-07</div>
+              </a>
+              <a class="page-footer__fax tel" href="tel:+998762240707">
+                <svg class="icon" width="16" height="15">
+                  <use xlink:href="#icon-print"></use>
+                </svg>
+                <div class="text">+998 76 224-07-07</div>
+              </a>
+              <a class="page-footer__email email" href="#">info@surxonhotel.uz</a>
+            </div>
+          </div>
+          <div class="page-footer__bottom">
+            <div class="page-footer__requisites">
+              <span>© MCHJ «Surkhon hotel» 2018</span>
+              <span>Номер лицензия: 00389</span>
+            </div>
+            <div class="page-footer__developer">
+              <span>Разработка сайта:</span>
+              <a href="fs.uz">Fs.uz</a>
+            </div>
+          </div>
+        </footer>
+      </footer>
+    </div>
+    <script src="./assets/js/jquery.min.js" defer></script>
+    <script src="./assets/js/vendor.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
+    <script src="./assets/js/modal.js" defer></script>
+    <script>
+      (function(doc)
+      {
+        var scripts = doc.getElementsByTagName('script')
+        var script = scripts[scripts.length - 1]
+        var xhr = new XMLHttpRequest()
+        xhr.onload = function()
+        {
+          var div = doc.createElement('div')
+          div.innerHTML = this.responseText
+          div.style.display = 'none'
+          script.parentNode.insertBefore(div, script)
+        }
+        xhr.open('get', './assets/img/sprite-sym.svg', true)
+        xhr.send()
+      })(document)
+    </script>
+    <!--[if lt IE 10 ]>
+<p class="chromeframe" style="background-color:yellow;">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/?locale=ru" style="color: red; font-weight: bold;">Скачайте новый браузер абсолютно бесплатно</a> или <a href="http://www.google.com/chromeframe/?redirect=true">активируй Google Chrome Frame</a>чтобы пользоваться всеми возможностями сайта.</p>
+<![endif]-->
+    <!-- Custom Browsers Color Start -->
+    <!-- Chrome, Firefox OS and Opera -->
+  </body>
+</html>

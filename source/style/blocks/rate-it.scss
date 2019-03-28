@@ -1,0 +1,22 @@
+/* .rate-it styles */
+.rate-it {
+	display: flex;
+	align-items: center;
+}
+.rate-it__title {
+	margin-right: 19px;
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+
+.rate-it__clear {
+	margin-left: 10px;
+	color: $brown;
+	font-size: 1.3rem;
+
+	&:hover {
+		color: $d-brown;
+	}
+}
+
+/* .rate-it styles end*/

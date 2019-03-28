@@ -1,0 +1,20 @@
+{
+  "name": "parnasmi",
+  "description": "Gulp проект для Адаптивной верстки",
+  "main": "gulpfile.js",
+  "authors": [
+    "Ilkhom <parnasmi@hotmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bemto": "https://github.com/kizu/bemto.git#^2.1.0"
+  }
+}

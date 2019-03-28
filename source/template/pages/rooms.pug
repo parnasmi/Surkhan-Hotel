@@ -1,0 +1,78 @@
+extends ../tpl/_template
+
+block variables
+	- var title = 'S-Номера'
+
+block content
+	+b.intro
+		+e.H1.title.title_default: .title__inner: b Номера гостиницы Сурхон
+		+e.bottom Для ващего удоства у нас на выбор стандартный, семейный, делюкс и люкс комнаты 
+	+b.rooms
+		+e.inner
+			+e.UL.list
+				each number in [4,6,5,5,5,5,5,5]
+					+e.item
+						+e.gal
+							+e.slider-show
+								+e.display_js.slider-display_magnific
+									- for (var j = 1; j <= number; j++)
+										+e.display-item.slider-item_magnific
+											//- img(src=`./assets/pics/pic-room-${j}.jpg`, alt)
+											img(data-lazy=`./assets/pics/pic-room-${j}.jpg`, alt)
+								+e.thumbs_js
+									- for (var j = 1; j <= number; j++)
+											+e.thumbs-item
+												// img(src=`./assets/pics/pic-room-${j}.jpg`, alt)
+												img(data-lazy=`./assets/pics/pic-room-${j}.jpg`, alt)
+						+e.content
+							+e.title Standard Premium
+							+e.descr
+								|В улучшенных двухместных номерах имеются две большая спальная кровать, журнальный столик, стул, настольная лампа, тапочки, телевизор, шкаф для одежды, тумбочка и душ.
+							+e.details
+								+e.UL.details-l
+									each detail in ['Кондиционер', 'Wi-Fi', 'Холодильник', 'Ванная команата', 'Балкон', 'Балкон']
+										+e.details-item.detail= detail
+							+e.prc
+								+e.prc-wr
+									+e.prc-type
+										+e.prc-type-title Для резидентов
+										+e.UL.prc-type-list
+											+e.prc-type-item
+												+b.room-prc
+													+e.icons
+														+symbol('12','13','#icon-man-fill')
+													+e.amount.price 160 000 сум
+											+e.prc-type-item
+												+b.room-prc
+													+e.icons
+														+symbol('12','13','#icon-man-fill')
+														+symbol('12','13','#icon-man-fill')
+													+e.amount.price 200 000 сум
+											+e.prc-type-item
+												+b.room-prc
+													+e.icons
+														+symbol('12','13','#icon-man-fill')
+														+symbol('12','13','#icon-man-fill')
+														+symbol('12','13','#icon-man-fill')
+													+e.amount.price 200 000 сум
+									+e.prc-type
+										+e.prc-type-title Для иностранцев:
+										+e.UL.prc-type-list
+											+e.prc-type-item
+												+b.room-prc
+													+e.icons
+														+symbol('12','13','#icon-man-fill')
+													+e.amount.price 180 000 сум
+											+e.prc-type-item
+												+b.room-prc
+													+e.icons
+														+symbol('12','13','#icon-man-fill')
+														+symbol('12','13','#icon-man-fill')
+													+e.amount.price 250 000 сум
+							+e.btn.btn_dark(href="#") Забронировать
+
+
+
+
+
+

@@ -1,0 +1,89 @@
+/* Header styles */
+	.page-header {
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.11);
+		background-color: #fff;
+		position: relative;
+		z-index: 12;
+		@include mobile {
+			height: 40px;
+			
+		}
+
+		@include tablet {
+			height: 60px;
+		}
+
+		@include desktop {
+			display: none;
+		}
+	}
+
+	.page-header__inner {
+		@include mobile {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		@include tablet {
+				@include clearfix;
+		}
+	}
+
+	.page-header__logo {
+		@include tablet {
+			float: left;
+			margin-top: 10px;
+			margin-left: 20px;
+		}
+	}
+
+	.page-header__lang {
+		color: $grey;
+		&:hover {
+			color: #000;
+		}
+		
+		@include mobile {
+			display: none;
+		}
+
+		@include tablet {
+			margin-right: 40px;
+		}
+	}
+	
+	.page-header__info {
+		float: right;
+		display: flex;
+		align-items: center;
+		@include tablet {
+			margin-top: 10px;
+			margin-right: 20px;
+		}
+	}
+
+	.page-header__menu-btn {
+		position: relative;
+		display: block;
+
+		@include mobile {
+			width: 40px;
+			height: 40px;
+		}
+
+		@include mobtab {
+			border-right: 1px solid $l-grey;
+		}
+
+		@include tablet {
+			height: 60px;
+			width: 60px;
+			float: left;
+		}
+
+		@include desktop {
+			display: none;
+		}
+	}
+/* Header styles end*/

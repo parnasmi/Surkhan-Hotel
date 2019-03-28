@@ -1,0 +1,109 @@
+/* .contacts-page styles */
+.contacts-page {
+	color: #000;
+}
+
+.contacts-page__inner {
+	@include inner;
+}
+
+.contacts-page__content {
+	@include hcard;
+	@include mobile {
+		padding-top: 20px;
+	}
+
+	@include tablet {
+		padding-top: 25px;
+	}
+
+	@include desktop {
+		padding-top: 30px;
+	}
+}
+
+.contacts-page__list {
+	margin: 0;
+}
+
+.contacts-page__item {
+	&:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
+	@include mobile {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	@include tablet {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	@include desktop {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	&_map {
+		padding: 0;
+		@include mobile {
+			.contacts-page__subtitle {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+			
+		}
+
+		@include tablet {
+			.contacts-page__subtitle {
+				padding-left: 25px;
+				padding-right: 25px;
+			}
+		}
+
+		@include desktop {
+			.contacts-page__subtitle {
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+		}
+	}
+}
+
+.contacts-page__subtitle {
+	@extend %htitle;
+	text-align: left;
+	margin-bottom: 15px;
+	font-size: 2rem;
+}
+
+.contacts-page__content {
+
+}
+
+.contacts-page__tel {
+	margin-bottom: 10px;
+}
+
+.contacts-page__email {
+	color: $brown;
+	text-decoration: underline;
+	margin-left: 25px;
+	display: inline-block;
+}
+
+.contacts-page__get-to {
+	&:not(:last-child) {
+		margin-bottom: 10px;
+	}
+}
+
+.contacts-page__map {
+	iframe {
+		width: 100% !important;
+		margin-bottom: -6px;
+	}
+}
+/* .contacts-page styles end*/

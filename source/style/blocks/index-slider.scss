@@ -1,0 +1,29 @@
+/* .index-slider styles */
+.index-slider {
+	border-radius: 3px;
+	overflow: hidden;
+	@include mobtab {
+		margin-bottom: 15px;
+	}
+
+	@include desktop {
+		margin-bottom: 25px;
+	}
+}
+
+.index-slider__inner {
+	
+	@include mobile {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	@include tablet {
+		@include container-tab;
+	}
+
+	@include desktop {
+		@include container;
+	}
+}
+/* .index-slider styles end*/

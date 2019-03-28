@@ -1,0 +1,27 @@
+/* .tel styles */
+	.tel {
+		@include iconed;
+		display: -webkit-flex !important;
+		display: -moz-flex !important;
+		display: -ms-flex !important;
+		display: -o-flex !important;
+		display: flex !important;
+		flex-wrap: nowrap;
+		white-space: nowrap;
+		.icon {
+			color: #000;
+		}		
+		.text {
+			font-size: 1.4rem;
+			color: $dark;
+			margin-left: 5px;
+			position: relative;
+			top: 2px;
+			display: inline-block;
+		}
+
+		&:hover {
+			opacity: .6;
+		}
+	}
+/* .tel styles end*/

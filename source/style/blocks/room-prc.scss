@@ -1,0 +1,22 @@
+/* .room-prc styles */
+.room-prc {
+	display: flex;
+	align-items: center;
+}
+
+.room-prc__icons {
+	height: 12px;
+	width: 45px;
+	margin-right: 10px;
+	position: relative;
+	top: -3px;
+	.icon {
+		fill: $green;
+		stroke: $green;
+	}
+}
+
+.room-prc__amount {
+	line-height: 1;
+}
+/* .room-prc styles end*/

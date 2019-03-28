@@ -1,0 +1,147 @@
+/* .about styles */
+.about {
+	color: #000;
+	position: relative;
+	
+	@include mobile {
+		margin-bottom: 20px;
+		padding-top: 15px;
+		&::before {
+			width: 100%;
+			left: 0;
+		}
+	}
+
+	@include mobtab {
+		&::before {
+			height: 409px;
+		}
+	}
+
+	@include tablet {
+		padding-top: 25px;
+
+		&::before {
+			@include centered(x);
+		}
+	}
+
+	@include tabdesk {
+		&::before {
+			width: 444px;
+			
+		}
+	}
+
+	@include desktop {
+		padding-top: 30px;
+
+		&::before {
+			height: 490px;
+			left: 90px;
+		}
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		background-color: #fff;
+		top: 0;
+		z-index: -1;
+	}
+}
+
+.about__title {
+	@include mobile {
+		margin-bottom: 15px;
+	}
+
+	@include tablet {
+		margin-bottom: 25px;
+	}
+
+	@include desktop {
+		margin-bottom: 30px;
+	}
+}
+
+.about__inner {
+	@include mobile {
+		@include mob-container;
+	}
+
+	@include tablet {
+		@include container-tab;
+	}
+
+	@include desktop {
+		@include container;
+		display: flex;
+		align-items: center;
+		margin-bottom: 140px;
+	}
+}
+
+.about__image {
+	box-shadow: 25px 26px 40px 0 rgba(59, 50, 35, 0.24);
+	border: solid 11px #ffffff;
+	position: relative;
+	background-color: #fff;
+	img {
+		@include img-center;
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+	@include mobile {
+		width: 285px;
+		height: 200px;
+		margin-bottom: 15px;
+	}
+
+	@include mobtab {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 30px;
+	}
+	
+	@include tablet {
+		width: 313px;
+		height: 209px;
+		
+	}
+
+	@include desktop {
+		width: 404px;
+		height: 270px;
+		flex-shrink: 0;
+		margin-right: 30px;
+	}
+
+}
+
+
+.about__descr {
+	
+}
+
+.about__text {
+	margin-bottom: 20px;
+
+	@include tablet {
+		margin-bottom: 30px;
+	}
+}
+
+.about__btn {
+	padding: 13px 15px 14px;
+
+	@include mobtab {
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+/* .about styles end*/

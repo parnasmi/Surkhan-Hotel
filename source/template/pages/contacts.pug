@@ -1,0 +1,49 @@
+extends ../tpl/_template
+
+block variables
+	- var title = 'S-Контакты'
+
+block content
+	+b.intro
+		+e.H1.title.title_default: .title__inner: b Контакты
+		+e.bottom Как нас найти, адрес и карта проезда
+	+b.contacts-page
+		+e.inner
+			+e.content
+				+e.UL.list
+					+e.item
+						+e.subtitle Адрес
+						+e.item-content
+							p Адрес: ул. Ат-Термизий, дом 27,
+							p Узбекистан, Сурхандарьинская область, город Термез
+					+e.item
+						+e.subtitle Контакты
+						+e.item-content
+							+e.tel.tel(href="tel:+998762240707")
+								+symbol('16','16','#icon-phone')
+								.text +998 76 224-07-07
+							+e.tel.tel(href="tel:+998762240707")
+								+symbol('16','15','#icon-print')
+								.text +998 76 224-07-07
+							+e.email.email(href="#") info@surxonhotel.uz
+					+e.item
+						+e.subtitle Как до нас добратся:
+						+e.item-content
+							+e.get-to
+								b Из аэропорта:
+								div Из аэропорта желательно добратся на такси. Примерное растояние 6 км. Время в пути 10 минут.
+							+e.get-to
+								b Из железнодорожного вокзала:
+								div На маршрутке номер №2, №12 или на такси. Растояние 2 км.
+					+e.item_map
+						+e.subtitle Мы на карте
+						+e.item-content
+							+e.map
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176.55166833081!2d67.27478031530221!3d37.2346165798614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f3531fd8be02fc1%3A0xebf81440008cc531!2z0JPQvtGB0YLQuNC90LjRhtCwICLQodGD0YDRhdCw0L0i!5e0!3m2!1sru!2s!4v1532666447085" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+
+
+
+
+

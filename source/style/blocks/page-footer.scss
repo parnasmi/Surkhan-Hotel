@@ -1,0 +1,181 @@
+/* .page-footer styles */
+.page-footer {
+	background-color: #fff;
+}
+ .page-footer__top {
+	
+	display: flex;
+	& > div {
+		flex: 1;
+	}
+	@include mobile {
+		flex-direction: column;
+		padding-top: 20px;
+	}
+
+	@include tablet {
+		padding: 20px;
+	}
+
+	@include tabdesk {
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	@include desktop {
+		padding: 28px;
+	}
+ }
+
+ .page-footer__info {
+	color: #000;
+	
+	
+	@include mobile {
+		padding: 0 30px;
+		text-align: center;
+		order: -30;
+	}
+ }
+
+ .page-footer__h-name {
+	font-weight: bold;
+	margin-bottom: 8px;
+ }
+
+ .page-footer__h-address {
+	margin-bottom: 8px;
+
+	@include tablet {
+		width: 200px;
+	}
+
+	@include desktop {
+		width: 300px;
+	}
+ }
+
+ .page-footer__h-map {
+ 	@include iconed;
+ 	color: $brown;
+ 	font-weight: bold;
+ 	text-decoration: underline;
+ 	@include mobile {
+ 		justify-content: center;
+ 	}
+	.icon {
+		fill: $brown;
+		margin-right: 5px;
+	}
+
+	&:hover {
+		text-decoration: none;
+	}
+ }
+
+ .page-footer__menu-wrapper {
+ 		@include mobile {
+ 			display: flex;
+ 			justify-content: center;
+ 		}
+ }
+
+ .page-footer__menu-wrapper,
+ .page-footer__contacts,
+ .page-footer__bottom {
+ 		@include mobile {
+ 			padding: 15px 0;
+			border-bottom: 1px solid $l-grey;
+ 		}
+		
+ }
+
+ .page-footer__menu {
+ 		column-count: 2;
+		@include mobile {
+			
+		}
+
+		@include desktop {
+			column-gap: 150px;
+		}
+ }
+
+ .page-footer__menu-i {
+	// line-height: 1;
+
+	&:not(:last-child) {
+		margin-bottom: 15px;
+	}
+ }
+
+
+ .page-footer__menu-l {
+	line-height: 1;
+	font-weight: bold;
+	color: $grey;
+
+	&:hover {
+		color: #000;
+	}
+ }
+
+ .page-footer__contacts {
+		@include mobile {
+			order: -20;
+			text-align: center;
+			.tel {
+				justify-content: center;
+			}
+		}
+
+		@include tabdesk {
+			display: flex;
+			align-items: flex-end;
+			flex-direction: column;
+		}
+ }
+
+ .page-footer__tel {
+	margin-bottom: 10px;
+ }
+
+ .page-footer__email {
+ 	display: inline-block;
+	margin-top: 8px;
+	@extend %link;
+ }
+
+ .page-footer__bottom {
+		font-size: 1.3rem;
+
+		@include tabdesk {
+			border-top: 1px solid $l-grey;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 20px;
+		}
+ }
+
+ .page-footer__requisites,
+ .page-footer__developer {
+
+		@include mobile {
+			text-align: center;
+		}
+ }
+
+  .page-footer__requisites {
+		span {
+			display: block;
+		}
+		@include mobile {
+			margin-bottom: 15px;
+		}
+  }
+
+ .page-footer__developer {
+	
+ }
+/* .page-footer styles end*/

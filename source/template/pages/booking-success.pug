@@ -1,0 +1,33 @@
+extends ../tpl/_template
+
+block variables
+	- var title = 'S-Брон-success'
+
+block content
+	+b.intro
+		+e.H1.title.title_default: .title__inner: b Бронирование
+		+e.bottom Забронируйте заранее номер и вы не останетесь на улице
+	+b.booking
+		+e.inner
+			+e.content
+				+e.success-icon: +src('img','icon-success.svg')
+				+e.H2.success-title Номер успешно забронирован
+				+e.success-text Мы с вами свяжемся по указанном номеру. Если вы указали E-mail отправил вам потверждение брони
+	+b.sights
+		+e.inner
+			+e.H3.title Достопримечательности Сурханьдарьи
+			+e.UL.post-list
+				each post in sightPosts
+					+e.post
+						+b.card_blog
+							+e.image_blog(href="#"): img(src=`./assets/pics/pic-blog-index-${post.pic}.png`, alt)
+							+e.content_blog
+								+e.title_blog(href="#")= post.title
+								+e.descr_blog= post.descr
+								+e.read-more(href="#")
+									span Читать далее
+									+symbol('46','7','#arrow-long')
+
+
+
+

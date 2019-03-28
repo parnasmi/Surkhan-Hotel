@@ -1,0 +1,52 @@
+/* .blog styles */
+.blog {
+
+}
+
+.blog__inner {
+	@include inner;
+}
+
+.blog__post-list {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+
+	@include tablet {
+		margin-right: -41px;
+	}
+
+	@include desktop {
+		margin-right: -39px;
+	}
+}
+
+.blog__post {
+	@include mobile {
+		width: 50%;
+		margin-bottom: 10px;
+
+		&:nth-child(odd) {
+			padding-right: 5px;
+		}
+
+		&:nth-child(even) {
+			padding-left: 5px;
+		}
+	}
+
+	@include tablet {
+		width: calc(100% / 3 - 41px);
+		margin-right: 41px;
+	}
+
+	@include tabdesk {
+		margin-bottom: 30px;
+	}
+
+	@include desktop {
+		width: calc(100% / 3 - 39px);
+		margin-right: 39px;
+	}
+}
+/* .blog styles end*/

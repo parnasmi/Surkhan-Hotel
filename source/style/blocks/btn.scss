@@ -1,0 +1,48 @@
+/* .btn styles */
+	.btn {
+		font-weight: bold;
+		
+		transition: all .3s;
+		display: inline-block;
+		&_dark {
+			border-radius: 2px;
+			font-size: 1.2rem;
+			background-color: $brown;
+			color: #fff;
+
+			&:hover {
+				background-color: $d-brown;
+			}
+		}
+
+		&_default {
+			
+			padding: 6px 10px 7px;
+		} 
+
+		&_light {
+			border: 2px solid $brown;
+			color: #000;
+			font-size: 1.4rem;
+			border-radius: 2px;
+			&:hover {
+				color: #fff;
+				background-color: $brown;
+			}
+		}
+
+		&:disabled {
+			background-color: #bfbfbf;
+			color: rgba(#fff, .7);
+			pointer-events: none;
+		}
+	}
+/* .btn styles end*/
+
+// input[type="submit"]:disabled,
+// button:disabled {
+// 	background-color: $grey-dis;
+// 	color: $grey-b;
+// 	cursor: default;
+// 	pointer-events: none;
+// }

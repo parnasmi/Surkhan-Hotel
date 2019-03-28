@@ -1,0 +1,24 @@
+/* .subtitle styles */
+	.subtitle {
+		font-weight: 700;
+		font-family: $ff-playfair;
+		color: #000;
+		
+		@include mobile {
+			font-size: 1.6rem;
+		}
+
+		@include tablet {
+			
+		}
+
+		@include tabdesk {
+			font-size: 2rem;
+		}
+
+		@include desktop {
+			
+		}
+
+	}
+/* .subtitle styles end*/

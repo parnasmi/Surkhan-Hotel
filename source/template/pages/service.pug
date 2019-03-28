@@ -1,0 +1,18 @@
+extends ../tpl/_template
+
+block variables
+	- var title = 'S-Service'
+
+block content
+	+b.intro
+		+e.H1.title.title_default: .title__inner: b Услуги
+		+e.bottom Пишем интересные статьи и держим вас с в курсе о жизни гостницы
+	+b.service
+		+e.inner
+			+e.UL.serv-list
+				each serv in service
+					+e.serv-item
+						+b.card_blog
+							+e.image_blog: img(src=`./assets/pics/pic-serv-${serv.pic}.png`, alt)
+							+e.content_blog
+								+e.title= serv.title

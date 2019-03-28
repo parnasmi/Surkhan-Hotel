@@ -1,0 +1,32 @@
++b.FOOTER.page-footer
+	+e.top
+		+e.info
+			+e.h-name Гостиница Сурхон Термез
+			+e.h-address Адрес: ул. Ат-Термизий, дом 27, Узбекистан, Сурхандарьинская область, город Термез
+			+e.h-map(href="#")
+				+symbol('8','11','#icon-location')
+				.text Карта проезда
+		+e.menu-wrapper
+			+e.menu
+				each menuItem in ['Главная', 'Номера', 'Услуги', 'Новости','О гостинице', 'Фотогаллерея', 'Контакты', 'Бронирование']
+					+e.menu-i
+						+e.menu-l(href="#")= menuItem
+			//- +e.menu
+				each menuItem in ['О гостинице', 'Фотогаллерея', 'Контакты', 'Бронирование']
+					+e.menu-i
+						+e.menu-l(href="#")= menuItem
+		+e.contacts
+			+e.tel.tel(href="tel:+998762240707")
+				+symbol('16','16','#icon-phone')
+				.text +998 76 224-07-07
+			+e.fax.tel(href="tel:+998762240707")
+				+symbol('16','15','#icon-print')
+				.text +998 76 224-07-07
+			+e.email.email(href="#") info@surxonhotel.uz
+	+e.bottom
+		+e.requisites
+			span © MCHJ «Surkhon hotel» 2018
+			span Номер лицензия: 00389
+		+e.developer
+			span Разработка сайта:
+			a(href="fs.uz") Fs.uz

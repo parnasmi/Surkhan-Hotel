@@ -1,0 +1,142 @@
+/* .booking styles */
+	.booking {
+		@include mobile {
+			margin-bottom: 20px;
+		}
+	}
+
+	.booking__inner {
+		@include inner;
+
+	}
+
+	.booking__content {
+		@include hcard;
+
+		@include mobile {
+			padding: 20px;
+		}
+
+		@include tabdesk {
+			padding: 30px 0;
+		}
+	}
+
+	.booking__form {
+		@include tabdesk {
+			width: 310px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.booking__inp-row {
+		&:not(:last-child) {
+			margin-bottom: 25px;
+		}
+	}
+
+	.booking__inp-row_dual {
+		@include mobile {
+			.booking__inp-col {
+				margin-bottom: 25px;
+			}
+		}
+
+		@include tabdesk {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+
+			.booking__inp-col {
+				flex: 1;
+				&:first-child {
+					padding-right: 10px;
+				}
+
+				&:last-child {
+					padding-left: 10px;
+				}
+			}
+		}
+	}
+
+	.booking__inp-row_citizenship {
+		.booking__inp-col:first-child {
+			margin-bottom: 15px;
+		}
+	}
+
+	.booking__label {
+
+		&.form-label {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		.price {
+			display: inline-block;
+			margin-left: 5px;
+		}
+	}
+
+	.booking__inp-col {
+		.striped-link {
+			margin-left: 30px;
+		}
+	}
+
+	.booking__btn {
+		display: inline-block;
+		width: 100%;
+		padding: 20px 20px;
+
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	.booking__success-icon {
+		width: 110px;
+		height: 110px;
+		margin-left: auto;
+		margin-right: auto;
+		@extend %img-center;
+		margin-bottom: 20px;
+
+		@include tabdesk {
+			margin-top: 20px;
+		}
+	}
+
+	.booking__success-title {
+		margin-bottom: 20px;
+		text-align: center;
+		font-weight: bold;
+		color: $brown;
+		font-family: $ff-playfair;
+		@include mobile {
+			font-size: 2rem;
+		}
+
+		@include tabdesk {
+			font-size: 3rem;
+		}
+	}
+
+	.booking__success-text {
+		font-size: 1.6rem;
+		text-align: center;
+
+		@include tabdesk {
+			margin-bottom: 20px;
+			padding: 0 30px;
+		}
+	}
+
+	.booking__breakfast {
+		outline: none;
+	}
+
+
+/* .booking styles end*/

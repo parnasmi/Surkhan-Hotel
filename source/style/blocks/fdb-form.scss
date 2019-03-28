@@ -1,0 +1,215 @@
+/* .fdbform styles */
+.fdb-form {
+	background-color: #fff;
+	border-radius: 5px;
+	position: relative;
+
+	@include mobile {
+		padding: 20px;
+
+		textarea {
+			height: 174px;
+		}
+	}
+
+	
+
+	@include tabdesk {
+		width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	&:not(.fdb-form_success) {
+		.fdb-form__success {
+			display: none;
+		}
+	}
+
+	&:not(.fdb-form_is-sending) {
+		.fdb-form__is-sending {
+			display: none;
+		}
+	}
+
+	&_success {
+		.fdb-form__content {
+			display: none;
+		}
+	}
+
+	&_is-sending {
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(#fff, .8);
+			border-radius: 5px;
+		}
+	}
+}
+
+.fdb-form__inner {
+	@include tabdesk {
+		width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.fdb-form__close-btn {
+	// pointer-events: none;
+}
+
+@media (min-width: 768px) {
+	.mfp-close-btn-in .mfp-close {
+		display: none;
+	}
+}
+
+.fdb-form__title {
+	font-weight: bold;
+	color: #000;
+	font-family: $ff-playfair;
+
+	@include mobile {
+		font-size: 2rem;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	@include tabdesk {
+		font-size: 2.5rem;
+		margin-bottom: 25px;
+	}
+}
+
+.fdb-form__rating {
+	margin-bottom: 20px;
+	@include mobile {
+		.rate-it__clear {
+			display: none;
+		}
+	}
+}
+
+.fdb-form__inp-row {
+	margin-bottom: 20px;
+}
+
+.fdb-form__recaptcha {
+	@include mobile {
+		width: 100%;
+	}
+
+	@include tabdesk {
+		width: 300px;
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.fdb-form__btn {
+	text-transform: uppercase;
+	padding: 15px 25px;
+}
+
+.fdb-form__success {
+	text-align: center;
+}
+
+.fdb-form__success-icon {
+
+}
+
+.fdb-form__success-title {
+	font-weight: bold;
+	color: $brown;
+	font-size: 3rem;
+	font-family: $ff-playfair;
+}
+
+.fdb-form__success-descr {
+	font-size: 1.6rem;
+}
+
+.fdb-form__success-btn {
+
+}
+
+.fdb-form__success-icon,
+.fdb-form__success-title,
+.fdb-form__success-descr {
+	margin-bottom: 25px;
+}
+
+.fdb-form__is-sending {
+	@include centered();
+	font-weight: bold;
+	z-index: 2;
+}
+
+.fdb-form__is-sending-preloader {
+	width: 60px;
+	height: 60px;border-radius: 50%;
+	background-color: $brown;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	overflow: hidden;
+	&::before {
+		content: "";
+		animation: spin 5s linear infinite;
+		background-image: linear-gradient(157deg, lighten($brown,50%) 4%, $d-brown 96%);
+		background-size: cover;
+		bottom: 0;
+		left: 0;
+		opacity: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		// z-index: -1;
+	}
+
+	&::after {
+		content: "";
+		animation: spin 5s linear infinite;
+		background-image: linear-gradient(157deg, lighten($brown,10%) 4%, darken($d-brown, 10%) 96%);
+		background-size: cover;
+		bottom: 0;
+		left: 0;
+		opacity: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		// z-index: -1;
+	}
+}
+
+.fdb-form__is-sending-text {
+	color: #000;
+	font-size: 2.5rem;
+}
+
+@keyframes spin {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotateZ(360deg);
+  }
+}
+
+/* .fdbform styles end*/

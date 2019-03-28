@@ -1,0 +1,99 @@
+// Core variables and mixins
+@import "_vars-project";
+@import "_mixins-project";
+@import "fonts";
+
+
+// Reset and dependencies
+@import "base/inormalize";
+
+// Core CSS
+@import "base/scaffolding-project";
+
+//Components
+// @import "components/buttons";
+@import "components/forms";
+// @import "components/tooltip";
+// @import "components/scroll";
+// @import "components/rating-stars";
+// @import "components/logo";
+// @import "components/nav";
+@import "components/checkbox-radio";
+
+@import "blocks/logo";
+@import "blocks/lang";
+@import "blocks/tel";
+@import "blocks/title";
+@import "blocks/subtitle";
+@import "blocks/icon";
+@import "blocks/btn";
+@import "blocks/card";
+@import "blocks/price";
+@import "blocks/slider-show";
+@import "blocks/detail";
+@import "blocks/room-prc";
+@import "blocks/label";
+@import "blocks/input-wrapper";
+@import "blocks/input";
+@import "blocks/select";
+@import "blocks/menu";
+@import "blocks/hamburger";
+@import "blocks/striped-link";
+@import "blocks/feedback";
+@import "blocks/rating";
+@import "blocks/stars";
+@import "blocks/rating-inputs";
+@import "blocks/rate-it";
+@import "blocks/popup-close-btn";
+@import "blocks/page-menu";
+
+
+//vendor
+@import "./vendor/slick";
+@import "./vendor/magnific-popup";
+
+//Blocks
+
+@import "blocks/wrapper";
+@import "blocks/page-header";
+@import "blocks/contacts";
+@import "blocks/sidebar";
+@import "blocks/main";
+@import "blocks/page-footer";
+@import "blocks/intro";
+@import "blocks/index-slider";
+@import "blocks/main-slider";
+@import "blocks/reserve";
+@import "blocks/index-rooms";
+@import "blocks/about";
+@import "blocks/rooms";
+@import "blocks/booking";
+@import "blocks/blog";
+@import "blocks/sights";
+@import "blocks/blog-inside";
+@import "blocks/service";
+@import "blocks/gallery";
+@import "blocks/contacts-page";
+@import "blocks/fdb-page";
+@import "blocks/fdb-form";
+
+
+
+//Custom vendor styles
+// @import "customVendor/slick.custom_hotel";
+// @import "customVendor/jquery-ui";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

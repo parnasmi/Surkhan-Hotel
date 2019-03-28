@@ -1,0 +1,53 @@
+/* .input styles */
+	.input {
+		font-size: 1.4rem;
+		color: #000;
+		// width: 100%;
+		transition: all .3s;
+		outline: none;
+		
+		&_default {
+			border: 1px solid $l-grey;
+			border-radius: 3px;
+			padding: 10px 10px 9px;
+			width: 100%;
+		}
+
+		&_iconed {
+			padding-right: 40px;
+		}
+		
+		&:focus,
+		&:hover {
+			border-color: $brown;
+		}
+
+		&:disabled {
+			background-color: #ececec;
+			border: solid 1px #dfdfdf;
+		}
+
+		&:invalid {
+			// border: solid 2px #ff8f8f;
+			// border-color: transparent;
+			box-shadow: 0 0 0 2px #ff8f8f;
+		}
+
+		// &_textarea {
+		// 	width: 100%;
+		// 	border: 1px solid $l-grey;
+		// }
+
+		&_feedback {
+			@include tabdesk {
+				height: 110px;
+			}
+		}
+
+		&_sec-feedback {
+			@include tabdesk {
+				height: 70px;
+			}
+		}
+	}
+/* .input styles end*/
